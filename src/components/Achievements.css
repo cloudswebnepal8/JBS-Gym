@@ -1,0 +1,94 @@
+.achievements {
+  padding: 90px 0;
+}
+
+.achievements__title {
+  text-align: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.8rem, 3.6vw, 2.4rem);
+  margin: 0 0 36px;
+}
+
+.achievements__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 720px;
+  margin: 0 auto 70px;
+}
+
+.stat-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 22px;
+  text-align: center;
+}
+
+.stat-card__value {
+  font-family: var(--font-display);
+  color: var(--orange);
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.stat-card__label {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.achievements__subtitle {
+  text-align: center;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.8rem, 3.6vw, 2.4rem);
+  margin: 0 0 48px;
+}
+
+.testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.testimonial-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 26px;
+}
+
+.testimonial-card p {
+  color: #ccc;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  margin: 0 0 22px;
+}
+
+.testimonial-card__name {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.testimonial-card__role {
+  color: var(--orange);
+  font-style: italic;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 900px) {
+  .achievements__stats {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 420px;
+  }
+
+  .testimonials__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonials__grid {
+    grid-template-columns: 1fr;
+  }
+}
